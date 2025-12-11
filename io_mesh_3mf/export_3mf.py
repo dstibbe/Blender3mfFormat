@@ -68,7 +68,7 @@ class Export3MF(bpy.types.Operator, bpy_extras.io_utils.ExportHelper):
         min=0,
         max=12)
 
-    def __init__(self):
+    def __init__(self,_):
         """
         Initialize some fields with defaults before starting.
         """

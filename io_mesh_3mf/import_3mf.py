@@ -60,7 +60,7 @@ class Import3MF(bpy.types.Operator, bpy_extras.io_utils.ImportHelper):
     directory: bpy.props.StringProperty(subtype='DIR_PATH')
     global_scale: bpy.props.FloatProperty(name="Scale", default=1.0, soft_min=0.001, soft_max=1000.0, min=1e-6, max=1e6)
 
-    def __init__(self):
+    def __init__(self, _):
         """
         Initializes the importer with empty fields.
         """
